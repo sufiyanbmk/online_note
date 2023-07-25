@@ -10,7 +10,7 @@ dotenv.config();
 app.use(morgan("dev")); 
 app.use(
     cors({
-      origin: "http://127.0.0.1:5173",
+      origin: ["http://127.0.0.1:5173",'https://online-notes-client.onrender.com','https://online-note-delta.vercel.app'],
       credentials: true,
     })
   );
