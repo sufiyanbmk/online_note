@@ -1,15 +1,15 @@
-import { FormEvent, useRef, useState } from "react";
+import { FormEvent, useRef } from "react";
 import { Button, Col, Form, Row, Stack } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import { NoteFormProps } from "../types/NoteData";
-import { getdata, postForm } from '../axios/Api';
+import {  postForm } from '../axios/Api';
 import toast from 'react-hot-toast'
 
 const NoteForm = () => {
     const titleRef = useRef<HTMLInputElement>(null)
     const bodyRef = useRef<HTMLTextAreaElement>(null)
     const navigate = useNavigate()
-    const [noteId, setNoteId] = useState(null)
+    const noteId=null
+    // const [noteId, setNoteId] = useState(null)
 
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault()
